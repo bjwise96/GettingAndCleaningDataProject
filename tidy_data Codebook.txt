@@ -1,0 +1,23 @@
+Data Dictionary - tidy_data.txt
+
+tidy_data.txt is the result of processing data recorded by the accelerometers in a SamsunGalaxy S smartphone.  The original data was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  The description of this data is found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Activity
+	Type of activity being recorded
+		WALKING
+		WALKING_UPSTAIRS
+		WALKING_DOWNSTAIRS
+		SITTING
+		STANDING
+		LAYING
+		
+Subject
+	The subject number of the person wearing the device
+		1..30
+
+The rest of the variables in the data set represent the mean of the original variables with the same name, grouped by Activity and Subject as requested in the course project.  There are 66 variables of this format.
+
+Example:		
+tBodyAccmeanX
+	mean of the tBodyAcc-mean()-X variable by Activity and subject
+		

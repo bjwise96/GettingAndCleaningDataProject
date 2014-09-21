@@ -38,7 +38,7 @@ test <- data.table(X_test)
 all_data <- rbind(train,test)
 
 #Use only columns with "mean" and "std" in the column name
-cols <- c(2,3,grep("mean",names(all_data)),grep("std",names(all_data)))
+cols <- c(2,3,intersect(grep("mean",names(all_data)),grep("meanFreq",names(all_data), invert=TRUE)),grep("std",names(all_data)))
 result <- 
   all_data %>%
   select(cols) %>%
